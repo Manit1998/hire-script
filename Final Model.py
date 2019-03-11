@@ -27,10 +27,10 @@ result=reg.predict(x_test)
 plt.plot(x_test,result,'r--')
 
 rmsc=np.sqrt(mean_squared_error(y_test,result)) # average error
-print(rmsc)
-print(y_test,result)
+print("RMSC :", rmsc)
+#print(y_test,result)
 from sklearn import metrics
-print(100*(metrics.accuracy_score(y_test, result)))
+print("Accuracy:",100*(metrics.accuracy_score(y_test, result)))
 
 
 plt.show()
